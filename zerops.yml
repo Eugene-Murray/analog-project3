@@ -1,5 +1,5 @@
 zerops:
-  - setup: analog
+  - setup: static0
     build:
       base: nodejs@20
       buildCommands:

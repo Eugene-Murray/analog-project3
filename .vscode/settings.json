@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/8f02f554-e271-4f32-9e54-2e38a1ae9160/resourceGroups/rg-my-hacking/providers/Microsoft.Web/sites/analog-app1",
+    "appService.deploySubpath": "."
+}

@@ -11,7 +11,8 @@
     "start": "npm run dev",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "serve:ssr:analog": "node dist/analog/server/index.mjs"
   },
   "private": true,
   "dependencies": {

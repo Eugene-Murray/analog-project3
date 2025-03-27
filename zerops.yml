@@ -1,5 +1,5 @@
 zerops:
-  - setup: analog-project3
+  - setup: analog
     build:
       base: nodejs@20
       buildCommands:
@@ -10,3 +10,7 @@ zerops:
         - dist/analog/public/~
     run:
       base: static
+
+
+
+     

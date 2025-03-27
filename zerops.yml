@@ -1,37 +1,12 @@
 zerops:
-  - setup: static0
-    # ==== How to build your application ====
+  - setup: analog-project3
     build:
-      # what technologies should the build
-      # container be based on (can be an array)
       base: nodejs@20
-
-      # what commands to use to build your app
       buildCommands:
-        - npm i
-        - npm run build my-app
-
-      # select which files / folders to deploy
-      # after the build successfully finished
-      # `~` can be used to mark starting point
-      # of deploy path, this example would deploy
-      # files in the dist folder
+        - pnpm i
+        - pnpm build
       deployFiles:
-        - dist/~
-
-      # *optional*: which files / folders
-      # to cache for the next build run
-      cache:
-        - node_modules
-        - package-lock.json
-
-    # ==== How to run your application ====
+        - public
+        - dist/analog/public/~
     run:
       base: static
-
-      # *optional*: setup redirects for
-      # SPA applications
-      routing:
-        redirects:
-          - from: /*
-            to: /index.html
